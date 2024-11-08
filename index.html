@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>MON PORTFOLIO</title>
@@ -8,7 +9,7 @@
      <body>
          <header>
             
-            <nav> 
+            <nav>
                 <ul>
                     <li><a href="">Accueil</a></li>
                     <li><a href="">A propos</a></li>
@@ -20,20 +21,20 @@
         </header>
         <!--section pour Accueil-->
 
-        <section>
-            <h1>Je suis NZANG AKAME </h1>
-            <p>Etudiante en biologie/Developpement web</p>
-            <button>Learn More</button>
+        <section >
+            <h1 id="titre">Je suis NZANG AKAME </h1>
+            <p id="effet">Etudiante en biologie/Developpement web</p>
+            <button id="donne">Learn More</button>
             <br>
-            <img src="IMG_3721.JPG" alt="" width="280">
+            <img  src="IMG_3721.JPG" alt="" width="280" id="photo">
 
         </section>
         <!--section pour a propos-->
         <section>
-            <h2>About me</h2>
-            <p> Je suis une jeune gaboanaise  passionné de cuisine , belle ,intelligente ambitieuse</p>
-            <ul>
-                <li>Nom: NZANG AKAME</li>
+            <h2 id="me">About me</h2>
+            <p id="resume"> Je suis une jeune gaboanaise  passionné de cuisine , belle ,intelligente ambitieuse</p>
+            <ul class="tous">
+                <li >Nom: NZANG AKAME</li>
                 <li>Prénom: Yolande sarrah</li>
                 <li>Adress: BD Ba hamed casablanca</li>
                 <li>Email : yolandesarrah@gmail.com</li>
@@ -42,14 +43,15 @@
         <!--section work-->
         <section>
             <h2>Expériences</h2>
-            <p> j'ai travailé quelques mois dans une boutique de vêtement en 2020 au pays , j'ai fais de la
-         vente de nourriture ici au maroc a mon propre compte , aussi des stages en une socitié d'opticien.</p>
+            <p id="aussi"> J'ai travailé quelques mois dans une boutique de vêtement en 2020 au pays
+                 , j'ai fais de la vente de nourriture ici au maroc a mon propre compte ,
+                  aussi des stages en une socitié d'opticien.</p>
         
         </section>
         <!--section mon cv-->
         <section>
             <h2>Compétences</h2>
-            <ul>
+            <ul class="parcours">
                 <li>Un baccalaureat 2020</li>
                 <li>Une licence en biologie 2024</li>
                 <li>Français courant</li>
@@ -63,7 +65,7 @@
                 <input type="text" placeholder="Ton nom"><br>
                 <input type="email" placeholder="email"><br>
                 <input type="text" placeholder="Adress"><br>
-                <textarea name="" id=""  rows="12"  cols="30"></textarea>
+                 <textarea name="" id=""  rows="12"  cols="30"></textarea>
                 <input type="submit">
             </form>
         </section>
