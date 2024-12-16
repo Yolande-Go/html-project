@@ -1,63 +1,78 @@
-#titre{
-    color:white;
-    font-size: 60px;
-    font-family: verdana;
-    border-radius: 40px;
-    margin: 10px;
-    padding: 50px;
-    background-color: blue;
-    
-}
-nav ul li {
-    display: inline-block;
-    width: 230px;
-    height: 60px;
-    font-family: Verdana;
-    color: white;
-}
-#donne{
-    color: black;
-    margin-left: 30px;
-    margin-bottom: 50px;
-    padding: 150;
-    
-    
-    
-}
-#me{
-    color: black;
-}
+/* .navbar-brand {
+  color: green !important;
+} */
 
-
-#resume{
-    display: block;
-    color: green;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.tous{
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  i {
+    font-size: 35px;
+    cursor: pointer;
+    margin: 0 10px;
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#aussi{
-    display:inline-block;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .shopping-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 50px 0;
+  }
+  .total-price span {
+    font-size: 30px;
+  }
+  
+  .total {
+    font-weight: bold;
+  }
+  .list-products {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 70%;
+  }
+  .card {
+    padding: 5%;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quantity {
+    font-size: 25px;
+  }
+  
+  .card-body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  .fa-trash-alt {
+    color: #de6b5c;
+  }
+  
+  .fa-heart {
+    color: grey;
+    cursor: pointer;
+  }
+  
 
-    
-}
-.parcours{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#photo{
-    display: block;
-    margin-left: 130px;
-    width: 400px;
-    height: 550px;
-    background-image: black;
-}
-#effet{
-    margin-right: 120px;
-    padding: 50px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-left: 60px;
-}
+  .liked {
+    color: red; /* Red color for liked items */
+  }
