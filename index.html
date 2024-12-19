@@ -1,176 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Font awesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Workshop DOM</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Shopping Card</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hopital en ligne</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href=""> About Us </a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href=""> Marketing & PR</a></li>
+                    <li><a href=""> Customer Success & Sales</a></li>
+                    <li><a href=""> IT,Product , Data</a></li>
+                    <li><a href=""> Finance & Administration</a></li>
+                    <li><a href=""> HR & more</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="shopping-card-container">
-        <div class="total-price">
-          <span> Total price : </span>
-          <span class="total"> 0 $ </span>
-        </div>
-        <div class="list-products">
-          <!-- Product 1 : baskets -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img
-                src="/assets/baskets.png"
-                class="card-img-top"
-                alt="baskets"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Baskets</h5>
-                <p class="card-text">This is a basket</p>
-                <h4 class="unit-price">100 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">1</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 2 : socks -->
+            </nav>
+        </header>
+        <!--section actueil-->
 
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="/assets/socks.png" class="card-img-top" alt="socks" />
-              <div class="card-body">
-                <h5 class="card-title">Socks</h5>
-                <p class="card-text">This is a socks</p>
-                <h4 class="unit-price">20 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">1</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 3 : bag -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="/assets/bag.png" class="card-img-top" alt="bag" />
-              <div class="card-body">
-                <h5 class="card-title">Bag</h5>
-                <p class="card-text">This is a Bag</p>
-                <h4 class="unit-price">50 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">1</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
+        <section>
+            <h1>Making the healthcare experience more human</h1>
+            <p>we want patients to find the perfect doctor and book an appointment in the most easy way.
+             The patient journey should be enjoyabe , and that's why we are always next to them:to help
+             them find the best possible care.Anytime , anywhere. </p>
+             <a href="https://www.hopitalenligne.com">cliquez ici pour visiter!</a>
+            
+        </section>
+        <!--section career-->
+        <section>
+            <h1> Cure your career !</h1>
+           <p >Our team is a mix of the best specialists.We have a great working atmosphere...Bla bla bla...
+            Like you've never herard that before</p> 
+            <p>But you're here and this means you're interested in finding out what it's like to be in 
+                our team.For real.So get in touch!Skype or meet us.You will see for yourself,no BS:)
+                We're hiring all the time .
+            </p>
+            <button>SEE ALL OPENINGS</button>
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- My JS -->
-    <script src="script.js"></script>
-  </body>
-</html>
+        </section>
+        <!--section marketing-->
+        <section>
+            <h1>Marketing & PR</h1>
+            <p>Marketing & PR in Docplanner seems unique .Wonder why?Because all of our
+                project are created especially for doctors and for patients,too. </p>
+                <button>JOB OFFERS</button>
+        </section>
+        <!--section customer-->
+        <section>
+            <h1>Customer Success & Sales</h1>
+            <p>We are real superheroes for our doctors.We know how hard their job is and we try to
+                give them the best product that organizes doctor's work.</p>
+            <button>JOB OFFERS</button>
+        </section>
+        <!--section IT-->
+        <section>
+            <h1>IT,Product,Data</h1>
+            <p>In these departments we try to build the best product you've ever seen.We listen to
+                our Customers and Users.We believe in Steve Job's quote:"Get closer than ever to
+                your Customers.So close that you tell theam what they need well before they realize it themselves."
+                Want to be a part of this great adventure? Join us. </p>
+                <button>JOB OFFERS</button>
+        </section>
+        <!--section Finance-->
+        <section>
+            <h1>Finance & Administration</h1>
+            <p>In this team we support Docplanner's life on a day -to-day basis.Our goal here is to ofter
+                financial information,organise the documents'flow and to maake our office the best space to work; </p>
+                <button>JOB OFFERS</button>
+        </section>
+        <!--section HR-->
+        <section>
+            <h1>HR & more</h1>
+            <p>We want to make work experience more human.Wanna see how it works?Look below and contact us!</p>
+            <button>JOB OFFERS</button>
+        </section>
+        <footer>
+            <br>
+            &copy; copyright 2024
+        </footer>
+    </body>
+</html> 
